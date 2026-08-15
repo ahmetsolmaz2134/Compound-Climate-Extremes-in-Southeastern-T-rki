@@ -1,205 +1,130 @@
-
 # Compound Climate Extremes in Southeastern Türkiye
 
-## Trends in Drought, Heavy Precipitation and Temperature Extremes (1990–2025)
-
-[![Research](https://img.shields.io/badge/Research-Climate%20Extremes-blue)]()
-[![Data](https://img.shields.io/badge/Data-NASA%20POWER-orange)]()
-[![Period](https://img.shields.io/badge/Period-1990--2025-green)]()
-[![Region](https://img.shields.io/badge/Region-Southeastern%20Türkiye-red)]()
-
----
+### Drought, Extreme Precipitation and Temperature Extremes (1990–2025)
 
 ## Overview
 
 This project investigates the spatial and temporal characteristics of
-compound climate extremes across Southeastern Türkiye during the
-1990–2025 period.
+compound climate extremes across Southeastern Türkiye between 1990 and
+2025.
 
-The study focuses on the interaction between:
+The study focuses on the interaction between drought, extreme
+precipitation and temperature extremes using NASA POWER climate data.
 
-- Drought
-- Extreme precipitation
+### Study Area
+
+The analysis covers nine provinces:
+
+**Adıyaman · Batman · Diyarbakır · Gaziantep · Kilis · Mardin · Siirt · Şanlıurfa · Şırnak**
+
+---
+
+## Key Results
+
+The analysis evaluates:
+
+- Drought frequency and intensity
+- Extreme precipitation events
 - Temperature extremes
 - Compound drought–heat events
 - Drought-to-flood transitions
+- Spatial differences between provinces
 
-The analysis aims to identify changes in the frequency, intensity and
-spatial distribution of climate extremes across the region.
-
----
-
-## Study Area
-
-The study covers nine provinces of Southeastern Türkiye:
-
-- Adıyaman
-- Batman
-- Diyarbakır
-- Gaziantep
-- Kilis
-- Mardin
-- Siirt
-- Şanlıurfa
-- Şırnak
-
-The regional analysis allows comparison of climate-extreme behavior
-between different climatic and geographical settings.
+Quantitative findings will be reported after statistical validation.
 
 ---
 
-## Research Questions
+## Main Results
 
-The project addresses the following research questions:
+### Drought Trends
 
-1. How have drought conditions changed across Southeastern Türkiye
-   between 1990 and 2025?
+![Drought Trends](figures/drought_trends.png)
 
-2. Have extreme precipitation events become more frequent or intense?
+### Extreme Precipitation
 
-3. Have temperature extremes increased during the study period?
+![Extreme Precipitation](figures/precipitation_extremes.png)
 
-4. Are drought and heat extremes occurring simultaneously more frequently?
+### Temperature Extremes
 
-5. Are transitions from prolonged dry conditions to extreme precipitation
-   becoming more frequent?
+![Temperature Extremes](figures/temperature_extremes.png)
 
-6. Which provinces show the strongest changes in compound climate extremes?
+### Compound Drought–Heat Events
 
----
+![Compound Drought Heat](figures/compound_drought_heat.png)
 
-## Data
+### Drought-to-Flood Transitions
 
-### NASA POWER
-
-Meteorological data will be obtained from the
-NASA Prediction of Worldwide Energy Resources (POWER) project.
-
-Primary variables include:
-
-- Precipitation
-- Mean air temperature
-- Maximum air temperature
-- Minimum air temperature
-
-Additional variables may include:
-
-- Relative humidity
-- Wind speed
-- Solar radiation
-
-### Temporal Resolution
-
-Monthly data will primarily be used for the period:
-
-**1990–2025**
+![Drought Flood Transitions](figures/drought_flood_transitions.png)
 
 ---
 
 ## Methodology
 
-The analysis consists of five major components.
+The analysis integrates:
 
-### 1. Drought Analysis
+- SPI-3 and SPI-12
+- Extreme precipitation indicators
+- Temperature percentile thresholds
+- Mann–Kendall trend test
+- Sen's slope estimator
+- Pettitt change-point test
+- Compound-event analysis
+- Spatial comparison
 
-Drought conditions will be evaluated using:
-
-- SPI-3
-- SPI-12
-
-Different accumulation periods will allow both short-term and
-long-term drought conditions to be examined.
-
----
-
-### 2. Extreme Precipitation Analysis
-
-Precipitation extremes will be evaluated using indicators such as:
-
-- Annual precipitation
-- Maximum monthly precipitation
-- Consecutive Dry Days (CDD)
-- Consecutive Wet Days (CWD)
-- Heavy precipitation frequency
-
----
-
-### 3. Temperature Extremes
-
-Temperature variability and extremes will be examined using:
-
-- Mean temperature
-- Maximum temperature
-- Minimum temperature
-- Temperature anomalies
-- Extreme heat frequency
-- Extreme cold frequency
-
-Percentile-based thresholds will be considered for the identification
-of temperature extremes.
-
----
-
-### 4. Trend and Change-Point Analysis
-
-Long-term changes will be evaluated using:
-
-- Mann–Kendall Trend Test
-- Sen's Slope Estimator
-- Pettitt Change-Point Test
-
-These methods will be applied to individual climate indicators and
-compound-event frequencies.
-
----
-
-### 5. Compound Climate Extremes
-
-The main component of the project is the identification of compound
-events.
-
-Potential event categories include:
-
-#### Compound Drought–Heat Events
-
-Simultaneous occurrence of:
-
-**Drought condition + extreme temperature**
-
-#### Drought-to-Flood Transitions
-
-Occurrence of:
-
-**Prolonged dry conditions → extreme precipitation**
-
-The frequency and spatial distribution of these events will be
-investigated across the nine provinces.
-
----
-
-## Workflow
+### Analytical Framework
 
 ```text
-NASA POWER Data
-       ↓
-Data Cleaning
-       ↓
-Quality Control
-       ↓
-Monthly Climate Dataset
-       ↓
-Drought Indices
-       ↓
+NASA POWER
+     ↓
+Data Processing
+     ↓
+Drought Analysis
+     ↓
 Precipitation Extremes
-       ↓
+     ↓
 Temperature Extremes
-       ↓
-Trend Analysis
-       ↓
-Change-Point Detection
-       ↓
-Compound Event Detection
-       ↓
+     ↓
+Trend & Change-Point Analysis
+     ↓
+Compound Climate Events
+     ↓
 Spatial Analysis
-       ↓
-Figures and Results
+Data
+
+Climate data are obtained from the NASA POWER project.
+
+Period: 1990–2025
+Temporal resolution: Daily / Monthly
+Variables: Precipitation, mean temperature, maximum temperature
+and minimum temperature.
+
+Research Questions
+How have drought conditions changed across Southeastern Türkiye?
+Have extreme precipitation events changed over time?
+Are temperature extremes increasing?
+Are drought and heat extremes occurring simultaneously more frequently?
+Are drought-to-flood transitions becoming more common?
+Which provinces are most affected by compound climate extremes?
+Scientific Significance
+
+Understanding compound climate extremes is essential for climate-risk
+assessment, agricultural planning, water-resource management and
+regional adaptation.
+
+This study provides a province-level assessment of interacting
+hydroclimatic extremes in Southeastern Türkiye and aims to contribute
+to regional climate-change research.
+
+Keywords
+
+Compound Climate Extremes Drought Extreme Precipitation
+Heat Extremes SPI NASA POWER Mann-Kendall Sen's Slope
+Pettitt Test Climate Change Southeastern Türkiye
+
+Author
+
+Ahmet Solmaz
+
+Geography | Climate Change | Environmental Analysis
+
+Project Status: In Development
